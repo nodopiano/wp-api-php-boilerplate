@@ -15,6 +15,6 @@ composer install
 ##### To run the project 
 (it starts a php server, so you need PHP > 5.6)
 ```
-npm start
+yarn start
 ```
 
