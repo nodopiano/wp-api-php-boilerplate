@@ -1,0 +1,16 @@
+{
+    "name": "nodopiano/wp-api-php-boilerplate",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Nodopiano",
+            "email": "info@nodopiano.it"
+        }
+    ],
+    "config": {
+        "vendor-dir": "src/assets/vendor/"
+    },
+    "require": {
+        "twig/twig": "~1.0"
+    }
+}
