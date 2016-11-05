@@ -1,4 +1,8 @@
 <?php
+Namespace App\Core\Database;
+
+use PDO;
+use PDOException;
 
 class Connection
 {

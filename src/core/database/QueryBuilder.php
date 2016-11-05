@@ -1,4 +1,5 @@
 <?php
+Namespace App\Core\Database;
 
 class QueryBuilder
 {

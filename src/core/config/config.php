@@ -1,5 +1,4 @@
 <?php
-
 return [
     'database' => [
         'name' => 'mytodo',
