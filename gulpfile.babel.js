@@ -138,7 +138,8 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
-  gulp.watch('src/pages/**/*.php').on('all', gulp.series( browser.reload));
+  gulp.watch('src/controllers/**/*.php').on('all', gulp.series( browser.reload));
+  gulp.watch('src/views/**/*.html').on('all', gulp.series( browser.reload));
   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(browser.reload));
   gulp.watch('src/{layouts,partials}/**/*.php').on('all', gulp.series(browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));
