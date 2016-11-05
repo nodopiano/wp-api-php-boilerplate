@@ -8,7 +8,10 @@
         }
     ],
     "config": {
-        "vendor-dir": "src/assets/vendor/"
+        "vendor-dir": "vendor/"
+    },
+   "autoload": {
+        "classmap": [ "src/" ]
     },
     "require": {
         "twig/twig": "~1.0"

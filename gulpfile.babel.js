@@ -26,7 +26,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+ gulp.series(gulp.parallel(sass, javascript, images, copy)));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -119,7 +119,7 @@ function images() {
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   php.server({
-    base: './dist',
+    base: './public',
     port: 9000
   });
   browser.init({
@@ -138,10 +138,9 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
-  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
-  gulp.watch('src/pages/**/*.php').on('all', gulp.series(pages, browser.reload));
-  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
-  gulp.watch('src/{layouts,partials}/**/*.php').on('all', gulp.series(resetPages, pages, browser.reload));
+  gulp.watch('src/pages/**/*.php').on('all', gulp.series( browser.reload));
+  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(browser.reload));
+  gulp.watch('src/{layouts,partials}/**/*.php').on('all', gulp.series(browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
