@@ -14,6 +14,7 @@
         "classmap": [ "src/" ]
     },
     "require": {
-        "twig/twig": "~1.0"
+        "twig/twig": "~1.0",
+        "guzzlehttp/guzzle": "~6.0"
     }
 }
