@@ -18,3 +18,10 @@ composer install
 yarn start
 ```
 
+#### credits
+
+- Routing, bootstrapping and autoloading are heavily inspired by Jeffrey Way's Laracast lessons: "[The PHP Practitioner](https://laracasts.com/series/php-for-beginners/)". 
+We are better developers because of him. 
+
+- The idea of a slim and fast boilerplate for WP API came from a talk at Milan WordCamp 2016 by [Siobhan McKeown](https://2016.milano.wordcamp.org/session/the-wordpress-rest-api-a-guide-for-the-perplexed/)
+
