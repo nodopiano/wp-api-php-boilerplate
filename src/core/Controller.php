@@ -29,4 +29,9 @@ class Controller
     {
         return 'Ciao, Mondo!';
     }
+
+    public function notFound()
+    {
+        return $this->twig->loadTemplate('errors/404.html')->render(array('message' => 'Hello!'));
+    }
 }

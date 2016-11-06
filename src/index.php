@@ -10,7 +10,6 @@ use App\Core\App;
 App::bind('config', require 'core/config/config.php');
 Bootstrap::boot();
 
-$action = Router::load('../src/routes.php')
+echo Router::load('../src/routes.php')
     ->direct(Request::uri());
-$controller = new $action;
-echo $controller->show();
+

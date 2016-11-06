@@ -1,6 +1,7 @@
 <?php
 
 $router->define([
-    '' => 'App\Controllers\HomeController',
-    'mail' => 'App\Controllers\MailController',
+    '' => 'App\Controllers\HomeController@show',
+    'form' => 'App\Controllers\HomeController@edit',
+    'mail/send' => 'App\Controllers\MailController@send',
 ]);

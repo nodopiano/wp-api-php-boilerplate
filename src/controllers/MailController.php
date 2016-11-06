@@ -10,8 +10,8 @@ use App\Core\Mail;
 class MailController extends Controller
 {
 
-    public function show() 
+    public function send() 
     {
-       return Mail::send('test@example.com','this is a test');
+       return Mail::send($_POST['from'],$_POST['message']);
     }
 }

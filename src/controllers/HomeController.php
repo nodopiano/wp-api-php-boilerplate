@@ -15,4 +15,9 @@ class HomeController extends Controller
         return $this->twig->loadTemplate('index.html')->render(array('message' => 'Hello!'));
 
     }
+    
+
+    public function edit(){
+        return $this->twig->loadTemplate('form.html')->render(array('message' => 'Hello!'));
+    }
 }
