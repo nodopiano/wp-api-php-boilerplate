@@ -21,7 +21,7 @@ class WordPress
             'timeout'  => 2.0,
         ]);
     }
-    
+
     public function posts($id = null)
     {
         $this->query = 'posts/'.$id;
@@ -51,20 +51,23 @@ class WordPress
         return $this;
     }
 
-    public function get()
+    public function get($json = false)
     {
         $response = $this->client->request('GET', $this->query);
-        return $this->toArray($respose);
+        if ($json) {
+          return $this->toJson($response);
+        }
+        return $this->toArray($response);
     }
 
     public function toArray($response)
     {
-        return json_decode($response);
+        return json_decode($response->getBody());
     }
 
     public function toJson($response)
     {
-        return $response; 
+        return $response->getBody();
     }
 
 }
