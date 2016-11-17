@@ -184,12 +184,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nodopiano/corda.git",
-                "reference": "b1a45a4cb9e023b353bb88bef9d7926662a779f2"
+                "reference": "446ff1c848c4539c05ec7aaf92c7b602ea593be8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nodopiano/corda/zipball/b1a45a4cb9e023b353bb88bef9d7926662a779f2",
-                "reference": "b1a45a4cb9e023b353bb88bef9d7926662a779f2",
+                "url": "https://api.github.com/repos/Nodopiano/corda/zipball/446ff1c848c4539c05ec7aaf92c7b602ea593be8",
+                "reference": "446ff1c848c4539c05ec7aaf92c7b602ea593be8",
                 "shasum": ""
             },
             "require": {
@@ -219,7 +219,7 @@
                 "source": "https://github.com/Nodopiano/corda/tree/master",
                 "issues": "https://github.com/Nodopiano/corda/issues"
             },
-            "time": "2016-11-17 16:38:21"
+            "time": "2016-11-17 17:00:03"
         },
         {
             "name": "phpmailer/phpmailer",
