@@ -184,18 +184,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nodopiano/corda.git",
-                "reference": "67efae159d45b5c16e634f0ad908461bea54eeaf"
+                "reference": "b1a45a4cb9e023b353bb88bef9d7926662a779f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nodopiano/corda/zipball/67efae159d45b5c16e634f0ad908461bea54eeaf",
-                "reference": "67efae159d45b5c16e634f0ad908461bea54eeaf",
+                "url": "https://api.github.com/repos/Nodopiano/corda/zipball/b1a45a4cb9e023b353bb88bef9d7926662a779f2",
+                "reference": "b1a45a4cb9e023b353bb88bef9d7926662a779f2",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "~6.0",
                 "phpmailer/phpmailer": "^5.2",
-                "twig/twig": "~1.0"
+                "twig/twig": "~1.0",
+                "vlucas/phpdotenv": "^2.4"
             },
             "type": "library",
             "autoload": {
@@ -218,7 +219,7 @@
                 "source": "https://github.com/Nodopiano/corda/tree/master",
                 "issues": "https://github.com/Nodopiano/corda/issues"
             },
-            "time": "2016-11-17 15:05:59"
+            "time": "2016-11-17 16:38:21"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -390,6 +391,56 @@
                 "templating"
             ],
             "time": "2016-10-25 19:17:17"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause-Attribution"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2016-09-01 10:05:43"
         }
     ],
     "packages-dev": [],

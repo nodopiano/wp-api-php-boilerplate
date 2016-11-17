@@ -10,7 +10,7 @@ use Nodopiano\Corda\App;
 App::bind('config', require 'config/config.php');
 App::bind('api', require 'config/api.php');
 
-// Bootstrap::boot();
+Bootstrap::boot(__dir__.'/..');
 
 echo Router::load('../app/routes.php')
     ->direct(Request::uri());
