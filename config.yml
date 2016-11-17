@@ -9,7 +9,7 @@ COMPATIBILITY:
 # UnCSS will use these settings
 UNCSS_OPTIONS:
   html:
-    - "src/**/*.html"
+    - "app/**/*.html"
   ignore:
     - !!js/regexp .foundation-mq
     - !!js/regexp ^\.is-.*
@@ -20,8 +20,8 @@ PATHS:
   dist: "public"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
-    - "src/assets/**/*"
-    - "!src/assets/{img,js,scss}/**/*"
+    - "app/assets/**/*"
+    - "!app/assets/{img,js,scss}/**/*"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "bower_components/foundation-sites/scss"
@@ -56,5 +56,5 @@ PATHS:
     # - "bower_components/foundation-sites/js/foundation.toggler.js"
     # - "bower_components/foundation-sites/js/foundation.tooltip.js"
     # Paths to your own project code are here
-    - "src/assets/js/!(app).js"
-    - "src/assets/js/app.js"
+    - "app/assets/js/!(app).js"
+    - "app/assets/js/app.js"

@@ -66,7 +66,7 @@ function resetPages(done) {
 
 // Generate a style guide from the Markdown content and HTML template in styleguide/
 function styleGuide(done) {
-  sherpa('src/styleguide/index.md', {
+  sherpa('app/styleguide/index.md', {
     output: PATHS.dist + '/styleguide.html',
     template: 'src/styleguide/template.html'
   }, done);
@@ -75,7 +75,7 @@ function styleGuide(done) {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 function sass() {
-  return gulp.src('src/assets/scss/app.scss')
+  return gulp.src('app/assets/scss/app.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sass
@@ -109,7 +109,7 @@ function javascript() {
 // Copy images to the "dist" folder
 // In production, the images are compressed
 function images() {
-  return gulp.src('src/assets/img/**/*')
+  return gulp.src('app/assets/img/**/*')
     .pipe($.if(PRODUCTION, $.imagemin({
       progressive: true
     })))
@@ -138,12 +138,12 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
-  gulp.watch('src/controllers/**/*.php').on('all', gulp.series( browser.reload));
-  gulp.watch('src/views/**/*.html').on('all', gulp.series( browser.reload));
-  gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(browser.reload));
-  gulp.watch('src/{layouts,partials}/**/*.php').on('all', gulp.series(browser.reload));
-  gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));
-  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
-  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
-  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
+  gulp.watch('app/controllers/**/*.php').on('all', gulp.series( browser.reload));
+  gulp.watch('app/views/**/*.html').on('all', gulp.series( browser.reload));
+  gulp.watch('app/{layouts,partials}/**/*.html').on('all', gulp.series(browser.reload));
+  gulp.watch('app/{layouts,partials}/**/*.php').on('all', gulp.series(browser.reload));
+  gulp.watch('app/assets/scss/**/*.scss').on('all', gulp.series(sass, browser.reload));
+  gulp.watch('app/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
+  gulp.watch('app/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+  gulp.watch('app/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }

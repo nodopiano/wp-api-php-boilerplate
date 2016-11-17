@@ -11,4 +11,4 @@ if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
     return false;
 }
 
-require __DIR__.'/../src/index.php';
+require __DIR__.'/../app/index.php';

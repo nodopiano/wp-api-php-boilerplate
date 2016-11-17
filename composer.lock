@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "19799b55a390e0c75f94d052dd8b0c3c",
-    "content-hash": "9124964467e622319b1305f77bdf7221",
+    "hash": "ddbe5f5c9db181850bda8b590cd4dc61",
+    "content-hash": "6a11b66c1c3728e9932246a888a72e5a",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -177,6 +177,48 @@
                 "uri"
             ],
             "time": "2016-06-24 23:00:38"
+        },
+        {
+            "name": "nodopiano/corda",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nodopiano/corda.git",
+                "reference": "67efae159d45b5c16e634f0ad908461bea54eeaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nodopiano/corda/zipball/67efae159d45b5c16e634f0ad908461bea54eeaf",
+                "reference": "67efae159d45b5c16e634f0ad908461bea54eeaf",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "phpmailer/phpmailer": "^5.2",
+                "twig/twig": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nodopiano\\Corda\\": "src/"
+                }
+            },
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Bonomo",
+                    "email": "marco.bonomo@nodopiano.it",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Corda is a simple framework made by nodopiano",
+            "support": {
+                "source": "https://github.com/Nodopiano/corda/tree/master",
+                "issues": "https://github.com/Nodopiano/corda/issues"
+            },
+            "time": "2016-11-17 15:05:59"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -353,7 +395,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "nodopiano/corda": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

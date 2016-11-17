@@ -1,8 +1,8 @@
 <?php
 Namespace App\Controllers;
 
-use App\Core\Controller;
-use App\Core\Mail;
+use Nodopiano\Corda\Controller;
+use Nodopiano\Corda\Mail;
 
 /**
  *
@@ -10,7 +10,7 @@ use App\Core\Mail;
 class MailController extends Controller
 {
 
-    public function send() 
+    public function send()
     {
        return Mail::send($_POST['from'],$_POST['message']);
     }

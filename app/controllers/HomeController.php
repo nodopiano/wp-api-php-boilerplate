@@ -1,7 +1,7 @@
 <?php
 Namespace App\Controllers;
 
-use App\Core\Controller;
+use Nodopiano\Corda\Controller;
 
 /**
  *

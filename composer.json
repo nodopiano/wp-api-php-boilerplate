@@ -7,15 +7,17 @@
             "email": "info@nodopiano.it"
         }
     ],
-    "config": {
-        "vendor-dir": "vendor/"
-    },
    "autoload": {
-        "classmap": [ "src/" ]
+        "classmap": [ "app/" ]
     },
+
+    "repositories": [
+      {
+            "type": "vcs",
+            "url": "https://github.com/Nodopiano/corda"
+          }
+    ],
     "require": {
-        "twig/twig": "~1.0",
-        "guzzlehttp/guzzle": "~6.0",
-        "phpmailer/phpmailer": "^5.2"
+        "nodopiano/corda": "dev-master"
     }
 }
