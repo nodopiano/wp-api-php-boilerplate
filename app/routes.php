@@ -1,8 +1,6 @@
 <?php
 
-$router->define([
-    '' => 'App\Controllers\HomeController@show',
-    'apidemo' => 'App\Controllers\HomeController@apiDemo',
-    'form' => 'App\Controllers\HomeController@edit',
-    'mail/send' => 'App\Controllers\MailController@send',
-]);
+$router->get('/', ['App\Controllers\HomeController', 'show']);
+$router->get('/apidemo', ['App\Controllers\HomeController', 'apiDemo']);
+$router->get('/form', ['App\Controllers\HomeController', 'edit']);
+$router->get('/mail/send', ['App\Controllers\MailController', 'send']);
