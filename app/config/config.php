@@ -1,6 +1,10 @@
 <?php
 return [
+    'services' => [
+      'api',
+    ],
     'database' => [
+        'enable' => false,
         'name' => 'mytodo',
         'username' => 'root',
         'password' => '',
