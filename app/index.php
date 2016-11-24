@@ -8,10 +8,7 @@ use Phroute\Phroute\Dispatcher;
 use Nodopiano\Corda\Request;
 use Nodopiano\Corda\App;
 
-App::bind('config', require 'config/config.php');
-App::bind('api', require 'config/api.php');
-
-Bootstrap::boot(__dir__.'/..');
+Bootstrap::boot(__dir__);
 
 $router = new RouteCollector();
 require '../app/routes.php';
