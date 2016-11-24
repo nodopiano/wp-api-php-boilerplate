@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
 
     public function show() {
-        return $this->twig->loadTemplate('index.html')->render(array('message' => 'Hello!'));
+        return view('index.html',array('message' => 'Hello!'));
 
     }
 
@@ -19,6 +19,6 @@ class HomeController extends Controller
     }
 
     public function edit(){
-        return $this->twig->loadTemplate('form.html')->render(array('message' => 'Hello!'));
+        return view('form.html',array('message' => 'Hello!'));
     }
 }
