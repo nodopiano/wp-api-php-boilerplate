@@ -179,21 +179,100 @@
             "time": "2016-06-24 23:00:38"
         },
         {
+            "name": "keboola/csv",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/keboola/php-csv.git",
+                "reference": "d7e257096c42eab09b54b7b46a905ca953a8eb6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/keboola/php-csv/zipball/d7e257096c42eab09b54b7b46a905ca953a8eb6f",
+                "reference": "d7e257096c42eab09b54b7b46a905ca953a8eb6f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Keboola\\Csv": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Keboola CSV reader and writer",
+            "homepage": "http://keboola.com",
+            "time": "2016-04-21 20:46:22"
+        },
+        {
+            "name": "mailchimp/mailchimp",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/mailchimp/mailchimp-api-php.git",
+                "reference": "7ac99b5ac746d5875c5c350ad7e3b83674c83ec1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/mailchimp/mailchimp-api-php/get/7ac99b5ac746d5875c5c350ad7e3b83674c83ec1.zip",
+                "reference": "7ac99b5ac746d5875c5c350ad7e3b83674c83ec1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mailchimp": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "MailChimp Devs",
+                    "email": "api@mailchimp.com",
+                    "homepage": "http://mailchimp.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "API client library for the MailChimp bulk email as a service platform",
+            "homepage": "https://bitbucket.org/mailchimp/mailchimp-api-php",
+            "keywords": [
+                "api",
+                "email"
+            ],
+            "time": "2014-10-30 20:38:12"
+        },
+        {
             "name": "nodopiano/corda",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nodopiano/corda.git",
-                "reference": "a1b66c10ff83b69937e00ec9d764b0a8a8a9efc2"
+                "reference": "2abe92527d662062fc1a5185f72a559d124dadd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nodopiano/corda/zipball/a1b66c10ff83b69937e00ec9d764b0a8a8a9efc2",
-                "reference": "a1b66c10ff83b69937e00ec9d764b0a8a8a9efc2",
+                "url": "https://api.github.com/repos/Nodopiano/corda/zipball/2abe92527d662062fc1a5185f72a559d124dadd2",
+                "reference": "2abe92527d662062fc1a5185f72a559d124dadd2",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "~6.0",
+                "keboola/csv": "^1.1",
+                "mailchimp/mailchimp": ">=2.0.0",
                 "phpmailer/phpmailer": "^5.2",
                 "phroute/phroute": "^2.1",
                 "twig/twig": "~1.0",
@@ -223,7 +302,7 @@
                 "source": "https://github.com/Nodopiano/corda/tree/master",
                 "issues": "https://github.com/Nodopiano/corda/issues"
             },
-            "time": "2016-11-24 16:19:33"
+            "time": "2016-11-29 13:28:29"
         },
         {
             "name": "phpmailer/phpmailer",
