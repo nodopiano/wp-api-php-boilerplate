@@ -15,7 +15,7 @@ class HomeController extends Controller
     }
 
     public function apiDemo() {
-      return $this->api->pages(61,true);
+      return json($this->api->pages(61));
     }
 
     public function edit(){
