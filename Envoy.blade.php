@@ -8,6 +8,8 @@ $repository = '';
 
 @task('clone', ['on' => 'production'])
   cd /home/{{$user}}/web/{{$domain}}/public_html/
+  rm index.html
+  rm robots.txt
   git clone {{$repository}} .
   cp .env-example .env
   composer install
