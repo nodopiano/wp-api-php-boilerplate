@@ -16,8 +16,10 @@
   ],
   "dependencies": {
     "foundation-sites": "~6.2.3",
+    "jquery-validation": "jquery-validate#^1.15.1",
     "motion-ui": "~1.2.2",
-    "jquery-validation": "^1.15.1"
+    "scrollreveal": "^3.3.2",
+    "slick-carousel": "slick.js#^1.6.0"
   },
   "private": true
 }

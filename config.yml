@@ -55,6 +55,11 @@ PATHS:
     # - "bower_components/foundation-sites/js/foundation.tabs.js"
     # - "bower_components/foundation-sites/js/foundation.toggler.js"
     # - "bower_components/foundation-sites/js/foundation.tooltip.js"
+    #
+    # - "bower_components/scrollreveal/dist/scrollreveal.js"
+    # - "bower_components/slick-carousel/slick/slick.js"
+    # - "bower_components/jquery-validation/dist/jquery.validate.js"
+    #
     # Paths to your own project code are here
     - "app/assets/js/!(app).js"
     - "app/assets/js/app.js"
