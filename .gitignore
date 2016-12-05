@@ -6,3 +6,4 @@ vendor
 .env
 .phpcomplete_extended
 tags
+Envoy.blade.php
