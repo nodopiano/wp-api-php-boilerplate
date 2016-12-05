@@ -8,17 +8,13 @@ class HomeController extends Controller
 
   public function show()
   {
-    $data = $this->api->pages(6);
+    $data = $this->api->pages(getenv('API_PAGE_ID'));
     return view('index.html',array('data' => $data, 'message' => 'Hello!'));
   }
 
   public function page($id)
   {
     return json($this->api->pages($id));
-  }
-
-  public function apiDemo() {
-    return json($this->api->pages(61));
   }
 
   public function edit()

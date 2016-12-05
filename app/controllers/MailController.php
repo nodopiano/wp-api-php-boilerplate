@@ -16,6 +16,11 @@ class MailController extends Controller
     {
       // Csv::export(array($_POST['from'],$_POST['message']));
       // NewsLetter::subscribe('38e73a2904',array('email' => $_POST['from']));
-      return json(Mail::send($_POST['from'],'test email from controller', $_POST['message']));
+        $mail = Mail::send($_POST['from'],'test email from controller', $_POST['message']);
+
+        $data = $this->api->pages(getenv('API_PAGE_ID'));
+        if ($mail)  return view('thankyou.html', array('message' => 'Grazie!' ));
+          else return view('thankyou.html', array('data' => $data ,'message' => 'Errore!' ));
+
     }
 }
